@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculator</title>
+
+        <style>
+            .MyStyle{
+                background-color: white;
+                border-style: solid;
+                border-color: black;
+            }
+
+            td{
+                font-size: 25pz;
+                width: 25%;
+            }
+            input{
+                height: 25px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <table align="center" style="height: 300px;width: 70%;">
+            <tr>
+                <td colspan="4" style="text-align:center;">
+                <b>Calculator</b>
+                </td> 
+            </tr>
+            
+            <tr>
+                
+                <td colspan="2" >
+                        Enter Number 1
+                    </td>
+                    <td colspan="2">
+                        <input type="number" name="number1" class="MyStyle">
+                    </td>
+            </tr>
+            <tr>
+                 
+                 <td colspan="2">
+                     Enter Number 2
+                    </td>
+                    <td colspan="2">
+                        <input type="number" name="number2" class="MyStyle">
+                    </td>
+
+            </tr>
+
+            <tr>
+                 
+                <td colspan="2">
+                    Result
+                   </td>
+                   <td colspan="2">
+                       <input type="number" name="number2" placeholder="" disabled class="MyStyle">
+                   </td>
+
+           </tr>
+        
+            <br>
+           
+            <tr style="width: 100%;">
+                <td>
+                    <input type="button" value="Addition" class="MyStyle" name="addition" title="press it to get addition" 
+                    style="margin-left: 0px;"
+                    />
+                </td>
+                <td>
+                    <input type="button" value="Subtraction" class="MyStyle" title="press it to get subtraction"
+                    style="margin-left: 12%;"/>
+                </td>
+                <td>
+                    <input type="button" value="Multiplication" class="MyStyle" title="press it to get multiplication"
+                    style="margin-left: 24%;"/>
+                </td>
+                <td>
+                    <input type="button" value="Division" class="MyStyle" title="press it to get division"
+                    style="margin-left: 36%;"/>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
