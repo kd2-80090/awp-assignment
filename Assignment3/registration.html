@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <style>
+      tr {
+        height: 30px;
+      }
+      td {
+        width: 20%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 13px;
+      }
+      :placeholder-shown {
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+      }
+      input {
+        width: 70%;
+      }
+      .MyStyle {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgba(80, 79, 79, 0.314)">
+    <h1
+      style="
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      "
+    >
+      Registration Form
+    </h1>
+    
+    <table style="
+        background-color: white;
+        width: 100%;
+    ">
+      <tr style="height: 500px;width: 100%;">
+        <td style="width: 10%;"></td>
+        <td style="width: 20%;">
+          <div>
+            <!-- <video src="https://www.youtube.com/watch?v=VQLyKe86H24&list=PLsbFrbYSzxMRLfK-AIoNY9O8vJVShw_LK"
+              style="border-color:navy ;
+                    border-style: solid;
+                    border-width: 2px;
+                    
+                    "
+            ></video> -->
+            <!-- <video width="320" height="240" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+            </video> -->
+            
+            
+            <iframe width="350px" height="300px" src="https://www.youtube.com/embed/VQLyKe86H24?si=DOL-Uwa_oJAfpAR9" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+
+          </div>
+        </td>
+        <td style="width: 60%;">
+          <div>
+            <center>
+              <table
+                style="
+                  height: 420px;
+                 
+                "
+              >
+                <tr>
+                  <td></td>
+                  <td>Name</td>
+                  <td class="MyStyle">
+                    <input type="text" placeholder="Enter Name" id="txtName" /> *
+                  </td>
+                  <td>
+                    <div style="color: red" id="txtNameError"
+                    ></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="MyStyle">BirthDate</td>
+                  <td>
+                    <input type="date" placeholder="dd/MM/yyyy" id="birthdate" /> *
+                  </td>
+                  <td >
+                    <div style="color: red" id="txtBdateError"></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="MyStyle">Email</td>
+                  <td>
+                    <input type="email" placeholder="abc@gmail.com" id="email" /> *
+                  </td>
+                  <td >
+                    <div style="color: red" id="txtEmailError"></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td class="MyStyle">Password</td>
+                  <td>
+                    <input type="password" placeholder="*******" id="password" /> *
+                  </td>
+                  <td >
+                    <div style="color: red" id="txtPasswdError"></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td style="vertical-align: top">
+                    <table>
+                      <tr>
+                        <td>Address</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>
+                          <select name="" id="">
+                            <option value="" selected>Maharashtra</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Madhya Pradesh</option>
+                            <option value="">Gujrat</option>
+                            <option value="">Uttar Pradesh</option>
+                            <option value="">Uttar Pradesh</option>
+        
+                          </select>
+                        </td>
+                        <td>
+                          <select name="" id="">
+                            <option value="" selected>Pune</option>
+                          </select>
+                        </td>
+                        <td>
+                          <select name="" id="">
+                            <option value="" selected style="font-size: 13px">
+                              Pune
+                            </option>
+                          </select>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: center">State</td>
+                        <td style="text-align: center">District</td>
+                        <td style="text-align: center">City</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Gender *</td>
+                  <td>
+                    <table>
+                      <tr>
+                        <td>
+                          <input type="radio" name="Gender" value="m" id="gender" * />
+                        </td>
+                        <td colspan="2" style="text-align: left">Male</td>
+                        <td>
+                          <input type="radio" name="Gender" value="f" id="gender" />
+                        </td>
+                        <td colspan="2" style="text-align: left">Female</td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td>
+                    <div style="color: red" id="txtGenderError">
+        
+                    </div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Upload photo</td>
+                  <td>
+                    <input
+                      type="file"
+                      title="choose file"
+                      placeholder="Browse your photo"
+                      style="width: 70%"
+                    />
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Select your course</td>
+                  <td>
+                    <div >
+                      <select name="course" id="selectCourse" >
+                        <option value="" id="" style="background-color: white;" >Select your course</option>
+                        <option value="PG-DAC" id="">PG-DAC</option>
+        
+                        <option value="PG-DMC">PG-DMC</option>
+                        <option value="PG-DBDA">PG-DBDA</option>
+                        <option value="PG-DESD">PG-DESD</option>
+                        <option value="PG-DITISS">PG-DITISS</option>
+                        <option value="PG-DAI">PG-DAI</option>
+                      </select>
+                      *
+                    </div>
+                  </td>
+                  <td>
+                    <div style="color: red" id="txtCourseError"></div>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr style="text-align: center">
+                  <td></td>
+                  <td>
+                    <input
+                      type="button"
+                      value="Register"
+                      style="width: 70%"
+                      onclick="DoRegister()"
+                    />
+                  </td>
+                  <td>
+                    <input type="button" value="Clear" style="width: 30%" />
+                  </td>
+                  <td></td>
+                </tr>
+              </table>
+            </center>
+        
+          </div>
+        </td>
+        <td style="width: 10%;"></td>
+      </tr>
+    </table>
+    <script src="validation.js"></script>
+    <script>
+      function DoRegister() {
+        ValidateForEmpty("txtName", "txtNameError", "Name is required");
+        ValidateForEmpty("birthdate", "txtBdateError", "Birthdate is required");
+        ValidateForEmpty("email", "txtEmailError", "Email is required");
+        ValidateForEmpty("password", "txtPasswdError", "Password is required");
+        ValidateForEmpty("selectCourse","txtCourseError","Course is required");
+        ValidateForGender("Gender","txtGenderError","Gender is required");
+      }
+    </script>
+  </body>
+</html>
