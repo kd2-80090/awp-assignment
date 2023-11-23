@@ -1,85 +1,147 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Calculator</title>
+  <head>
+    <title>Calculator</title>
 
-        <style>
-            .MyStyle{
-                background-color: white;
-                border-style: solid;
-                border-color: black;
-            }
+    <style>
+      .MyStyle {
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+        text-align: center;
+      }
 
-            td{
-                font-size: 25pz;
-                width: 25%;
-            }
-            input{
-                height: 25px;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <table align="center" style="height: 300px;width: 70%;">
-            <tr>
-                <td colspan="4" style="text-align:center;">
-                <b>Calculator</b>
-                </td> 
-            </tr>
-            
-            <tr>
-                
-                <td colspan="2" >
-                        Enter Number 1
-                    </td>
-                    <td colspan="2">
-                        <input type="number" name="number1" class="MyStyle">
-                    </td>
-            </tr>
-            <tr>
-                 
-                 <td colspan="2">
-                     Enter Number 2
-                    </td>
-                    <td colspan="2">
-                        <input type="number" name="number2" class="MyStyle">
-                    </td>
+      td {
+        font-size: 26px;
+        width: 25%;
+      }
+      input {
+        height: 25px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <table align="center" style="height: 300px; width: 70%">
+      <tr>
+        <td colspan="4" style="text-align: center">
+          <b>Calculator</b>
+        </td>
+      </tr>
 
-            </tr>
+      <tr>
+        <td colspan="2">Enter Number 1</td>
+        <td colspan="2">
+          <input
+            type="number"
+            name="number1"
+            class="MyStyle"
+            id="first"
+            style="font-size: 26px"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">Enter Number 2</td>
+        <td colspan="2">
+          <input
+            type="number"
+            name="number2"
+            class="MyStyle"
+            id="second"
+            style="font-size: 26px"
+          />
+        </td>
+      </tr>
 
-            <tr>
-                 
-                <td colspan="2">
-                    Result
-                   </td>
-                   <td colspan="2">
-                       <input type="number" name="number2" placeholder="" disabled class="MyStyle">
-                   </td>
+      <tr>
+        <td colspan="2">Result</td>
+        <td colspan="2">
+          <input
+            type="number"
+            name="resultName"
+            placeholder=""
+            class="MyStyle"
+            disabled
+            id="result"
+            style="font-weight: bold; font-size: 26px; color: black"
+          />
+        </td>
+      </tr>
 
-           </tr>
+      <br />
+
+      <tr style="width: 100%">
+        <td>
+          <input
+            type="button"
+            value="Addition"
+            placeholder="addition"
+            class="MyStyle"
+            name="addition"
+            title="press it to get addition"
+            style="margin-left: 0px"
+            onclick="Calculator(value)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Subtraction"
+            class="MyStyle"
+            title="press it to get subtraction"
+            style="margin-left: 12%"
+            onclick="Calculator(value)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Multiplicaition"
+            class="MyStyle"
+            title="press it to get multiplication"
+            style="margin-left: 24%"
+            onclick="Calculator(value)"
+          />
+        </td>
+        <td>
+          <input
+            type="button"
+            value="Division"
+            class="MyStyle"
+            title="press it to get division"
+            style="margin-left: 36%"
+            onclick="Calculator(value)"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      function Calculator(operand) {
+        var refToInput1 = document.getElementById("first");
+        var refToInput2 = document.getElementById("second");
+
+        var refToResult = document.getElementById("result");
+        var result;
+        switch (operand) {
+          case "Subtraction":
+            result = eval(refToInput1.value) - eval(refToInput2.value);
+            break;
+          case "Addition":
+            result = eval(refToInput1.value) + eval(refToInput2.value);
+            break;
+          case "Division":
+            result = eval(refToInput1.value) / eval(refToInput2.value);
+            break;
+          case "Multiplicaition":
+            result = eval(refToInput1.value) * eval(refToInput2.value);
+            break;
+        }
         
-            <br>
-           
-            <tr style="width: 100%;">
-                <td>
-                    <input type="button" value="Addition" class="MyStyle" name="addition" title="press it to get addition" 
-                    style="margin-left: 0px;"
-                    />
-                </td>
-                <td>
-                    <input type="button" value="Subtraction" class="MyStyle" title="press it to get subtraction"
-                    style="margin-left: 12%;"/>
-                </td>
-                <td>
-                    <input type="button" value="Multiplication" class="MyStyle" title="press it to get multiplication"
-                    style="margin-left: 24%;"/>
-                </td>
-                <td>
-                    <input type="button" value="Division" class="MyStyle" title="press it to get division"
-                    style="margin-left: 36%;"/>
-                </td>
-            </tr>
-        </table>
-    </body>
+        refToResult.value = result;
+        
+      }
+    </script>
+  </body>
 </html>
