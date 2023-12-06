@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration</title>
+    <style>
+      tr {
+        height: 25px;
+      }
+      td {
+        width: 25%;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 15px;
+      }
+      :placeholder-shown {
+        font-family: "Times New Roman", Times, serif;
+        color: black;
+      }
+      input {
+        width: 75%;
+      }
+      .MyStyle {
+        width: 10%;
+      }
+      div {
+        /* height: 35px; */
+        background-color:black ;
+        text-align: center;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <br>
+    <h1
+      style="
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      "
+    >
+      Customer Registration
+    </h1>
+
+    <br>
+    <center>
+      <table
+        style="width: 100%; background-color: rgb(250, 177, 151); height: 400px"
+      >
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Cnum:</td>
+          <td>
+            <input
+              type="number"
+              id="cnumber"
+              placeholder="12"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcnumber" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Cname:</td>
+          <td>
+            <input
+              type="text"
+              id="cname"
+              placeholder="Sachin"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcname" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Email:</td>
+          <td>
+            <input
+              type="email"
+              id="cemail"
+              placeholder="sachin@gmail.com"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcemail" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Password</td>
+          <td>
+            <input
+              type="password"
+              id="cpassword"
+              placeholder="***"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcpassword" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Confirrm_Password</td>
+          <td>
+            <input
+              type="password"
+              id="recpassword"
+              placeholder="***"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivrecpassword" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Mobile_No</td>
+          <td>
+            <input
+              type="number"
+              id="cmobileno"
+              placeholder="8999266801"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcmobileno" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>City</td>
+          <td>
+            <input
+              type="text"
+              id="ccity"
+              placeholder="Pune"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivccity" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>State</td>
+          <td>
+            <select name="selectstate" id="cstate">
+              <option name="cselected" value="" selected>Select State</option>
+              <option name="cselected" value="Maharashtra">Maharashtra</option>
+              <option name="cselected" value="Gujrat">Gujrat</option>
+              <option name="cselected" value="Delhi">Delhi</option>
+              <option name="cselected" value="Bihar">Bihar</option>
+            </select>
+          </td>
+          <td>
+            <div id="mydivcstate" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Pincode</td>
+          <td>
+            <input
+              type="number"
+              id="cpincode"
+              placeholder="411039"
+              style="
+                border-style: solid;
+                width: 95%;
+                height: 90%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div id="mydivcpincode" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td>Request_Payment_Mode</td>
+          <td style="width: 25%">
+            <table>
+              <tr>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <input
+                          id="ccredit"
+                          name="paymenttype"
+                          type="checkbox"
+                          style="margin-left: 0px"
+                        />
+                      </td>
+                      <td>Credit</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <input
+                          id="cupi"
+                          name="paymenttype"
+                          type="checkbox"
+                          style="margin-left: 0px"
+                        />
+                      </td>
+                      <td>Debit</td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <table>
+                    <tr>
+                      <td>
+                        <input
+                          id="cdebit"
+                          name="paymenttype"
+                          type="checkbox"
+                          style="margin-left: 0px"
+                        />
+                      </td>
+                      <td>UPI</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <div id="mydivcpayment" style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+        <tr>
+          <td style="width: 5%"></td>
+          <td></td>
+          <td align="center">
+            <input
+              type="submit"
+              value="Submit"
+              onclick="DoRegister()"
+              style="
+                border-style: solid;
+                width: 35%;
+                height: 65%;
+                border-color: black;
+                border-width: 01px;
+              "
+            />
+          </td>
+          <td>
+            <div style="color: red"></div>
+          </td>
+          <td style="width: 5%"></td>
+        </tr>
+      </table>
+    </center>
+
+    <script src="validation.js"></script>
+    <script>
+      function DoRegister() {
+        ValidateForEmpty(
+          "cnumber",
+          "mydivcnumber",
+          "Customer Number is required"
+        );
+        ValidateForEmpty("cname", "mydivcname", "Name is required");
+        ValidateForEmpty("cemail", "mydivcemail", "Email is required");
+        ValidateForEmpty("cpassword", "mydivcpassword", "Password is required");
+        ValidateForEmpty(
+          "recpassword",
+          "mydivrecpassword",
+          "Password is required"
+        );
+        ValidateForEmpty(
+          "cmobileno",
+          "mydivcmobileno",
+          "Mobile No. is required"
+        );
+        ValidateForEmpty("ccity", "mydivccity", "City is required");
+        ValidateForEmpty("cpincode", "mydivcpincode", "Pincode is required");
+        ValidateForEmpty("cstate", "mydivcstate", "State is required");
+        ValidateForPayment(
+          "paymenttype",
+          "mydivcpayment",
+          "Payment mode is required"
+        );
+      }
+    </script>
+  </body>
+</html>
