@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display Data</title>
+</head>
+
+<body>
+    <center>
+        <h1>Display Data</h1>
+        <p>Customer No. : <span id="noDisplay"></span></p>
+        <p>Customer Name: <span id="fullNameDisplay"></span></p>
+        <p>Email: <span id="emailDisplay"></span></p>
+    </center>
+
+    <script>
+        // Retrieve data from local storage
+        let cname = localStorage.getItem('cname');
+        let cemail = localStorage.getItem('cemail');
+        let cnumber = localStorage.getItem('cnumber');
+
+        // Display data on the page
+        document.getElementById('fullNameDisplay').textContent = cname;
+        document.getElementById('emailDisplay').textContent = cemail;
+        document.getElementById('noDisplay').textContent = cnumber;
+
+        // localStorage.setItem('cnumber', fullName);
+        //     localStorage.setItem('cname', name);
+        //     localStorage.setItem('cemail', email);
+        //     localStorage.setItem('cmobileno', mobileno);
+    </script>
+</body>
+
+</html>
